@@ -5,4 +5,4 @@ RUN apk add curl
 ARG DEPENDENCY=target
 
 COPY $DEPENDENCY/webapp1-0.1.0.jar /app/lib/webapp1-0.1.0.jar 
-ENTRYPOINT ["/usr/bin/java", "-jar", "/app/lib/webapp1-0.1.0.jar "]
+ENTRYPOINT ["/usr/bin/java", "-jar", "/app/lib/webapp1-0.1.0.jar"]
