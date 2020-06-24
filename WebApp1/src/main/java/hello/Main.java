@@ -6,10 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;
@@ -21,7 +19,7 @@ public class Main {
 	@RequestMapping("/")
 	public String home() {
 		System.out.println("Jai Ganesh Hare Rama hare Krishna");
-			return "This is from first webapp application";
+			return "This is from webapp1";
 	}
 	
 	@RequestMapping(value = "/{bucket}", method = RequestMethod.GET)
