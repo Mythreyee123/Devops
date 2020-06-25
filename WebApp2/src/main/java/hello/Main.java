@@ -18,8 +18,7 @@ public class Main {
 
 	@RequestMapping("/")
 	public String home() {
-		System.out.println("Jai Ganesh Hare Rama hare Krishna");
-			return "successfully created webapp2";
+			return "webapp2 successfully created";
 	}
 	
 	@RequestMapping(value = "/{bucket}", method = RequestMethod.GET)
